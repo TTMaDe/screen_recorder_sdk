@@ -1,8 +1,6 @@
-import os
 import json
 import ctypes
 import numpy
-import enum
 import platform
 import struct
 from numpy.ctypeslib import ndpointer
