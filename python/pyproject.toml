@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "screen_recorder_sdk"
-version = "0.0.1"
+dynamic = ["version"]
 description = "Library to take screenshots and record video from desktop"
 readme = "README.md"
 authors = [
