@@ -56,10 +56,10 @@ class ScreenRecorderDLL (object):
 
     def __init__ (self):
         try:
-            dll_path = importlib.resources.files(__package__).joinpath('lib/ScreenRecorder.dll')
+            dll_path = importlib.resources.files(__package__).joinpath('lib', 'ScreenRecorder.dll')
         except Exception:
             import importlib.resources as resources
-            dll_path = resources.files('screen_recorder_sdk').joinpath('lib/ScreenRecorder.dll')
+            dll_path = resources.files('screen_recorder_sdk').joinpath('lib', 'ScreenRecorder.dll')
         self.lib = ctypes.cdll.LoadLibrary(str(dll_path))
 
         self.InitResources = self.lib.InitResources
